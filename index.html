@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Dropdown menu</title>  
+</head>
+
+<body>
+    <!-- hien thi khung vien  -->
+    <div id="wrapper">
+        <div id="header">
+            <!-- Them "container" vao thi toan bo cac cau lenh duoi dc thuc hien -->
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="images/bt.jpeg" alt="JavaScript">
+                </a>
+
+            <!-- tao menu (ul#main-menu>li(list)*8(so dong)>a) -->
+            <ul id="main-menu">
+                <li><a href="">About</a></li>
+                <li><a href="">Html</a>
+                <!-- tao cau truc thu muc con -->
+                    <ul class="sub-menu">
+                        <li><a href="">Menu 2.1</a></li>
+                        <li><a href="">Menu 2.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu 2.2.1</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Menu 2.2.1</a></li>
+                                        <li><a href="">Menu 2.2.2</a></li>
+                                        <li><a href="">Menu 2.2.3</a></li>
+                                        <li><a href="">Menu 2.2.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Menu 2.2.2</a></li>
+                                <li><a href="">Menu 2.2.3</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Menu 2.2.1</a></li>
+                                        <li><a href="">Menu 2.2.2</a></li>
+                                        <li><a href="">Menu 2.2.3</a></li>
+                                        <li><a href="">Menu 2.2.4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Menu 2.2.4</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="">Menu 2.3</a></li>
+                        <li><a href="">Menu 2.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Css</a></li>
+                <li><a href="">Php</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Menu 2.1</a></li>
+                        <li><a href="">Menu 2.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu 2.2.1</a></li>
+                                <li><a href="">Menu 2.2.2</a></li>
+                                <li><a href="">Menu 2.2.3</a></li>
+                                <li><a href="">Menu 2.2.4</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="">Menu 2.3</a></li>
+                        <li><a href="">Menu 2.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Laravel</a></li>
+                <li><a href="">Boostrap</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">Project</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    $(document).ready(function(){
+        // alert('OK');
+        // Tim tat ca cac li co sub-menu va them vao no class has-child
+        $('.sub-menu').parent('li').addClass('has-child');
+        
+    });
+</script>
+</body>
+
+</html>
